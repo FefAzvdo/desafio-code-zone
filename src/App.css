@@ -1,22 +1,177 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.header {
+  height: 80px;
+  background-color: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #eee;
+  border: 1px solid #000;
+}
+
+.midle {
+  display: flex;
+  height: 400px;
+  flex-direction: row;
+}
+
+.midle_left {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.midle_left_top {
+  background: #aaa;
+  color: #eee;
+  height: 200px;
+  display: flex;
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+}
+
+.midle_left_bottom {
+  background: #aaa;
+  color: #eee;
+  height: 70px;
+  display: flex;
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.midle_right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.midle_right_top {
+  height: 150px;
+  padding: 10px;
+  background: #aaa;
+  color: #eee;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.midle_right_midle {
+  /*poderia ser uns 10px maior para ficar idêntico ao layout, mas desse modo achei mais simétrico*/
+  height: 100px;
+
+  background: #aaa;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+}
+
+.midle_right_bottom {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.midle_right_bottom_big {
+  flex: 3;
+  background: #aaa;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  margin-right: 10px;
+  height: 80px;
+}
+
+.midle_right_bottom_medium {
+  flex: 2;
+  background: #aaa;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  height: 80px;
+}
+
+.bottom {
+  height: 30px;
+  background-color: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #eee;
+  border: 1px solid #000;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slider-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.arrow {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  border-radius: 50%;
+  transition: transform ease-in 0.1s;
+  border: 1px solid black;
+}
+
+.nextArrow {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  z-index: 1;
+  color: #fff;
+  cursor: pointer;
+}
+
+.backArrow {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  z-index: 1;
+  color: #fff;
+  cursor: pointer;
+}
+
+.progress_bar {
+  transition: width 0.65s ease-in-out;
+}
+
+.active {
+  background: #000;
 }
